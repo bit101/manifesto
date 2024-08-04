@@ -1,2 +1,6 @@
 out
 project.log
+build/linux
+build/windows
+build/mac
+build/manifesto
