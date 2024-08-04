@@ -1,0 +1,6 @@
+github.com/bit101/bitlib v0.5.2 h1:n5uw8Vk/BhBgW9FXtUCTgTB6F6PS7rCdkd1PLAGzY6g=
+github.com/bit101/bitlib v0.5.2/go.mod h1:d0L7f0E8a21VD7cDuVuIsNyD4yqqxZsvgKxh5Nx433E=
+github.com/bit101/blcairo v1.3.9 h1:P1pRSw9EwzZ8i8A7d8i1nDbxBnxXjw0Edc8p23uMccw=
+github.com/bit101/blcairo v1.3.9/go.mod h1:R2EyRz7I8btpjrBXnQSB87mC+0De6NkYV/p07fuArZE=
+github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
+github.com/spf13/pflag v1.0.5/go.mod h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=
