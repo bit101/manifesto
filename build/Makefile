@@ -1,9 +1,12 @@
 linux:
-	@go build -o ./linux/manifesto ../cmd/manifesto/main.go 
+	@GOOS=linux GOARCH=amd64 go build -o ./linux/manifesto ../cmd/manifesto/main.go 
 
 # windows:
-# 	@go build -o ./windows/manifesto.exe ../cmd/manifesto/main.go
+# 	@GOOS=windows GOARCH=amd64 go build -o ./windows/manifesto.exe ../cmd/manifesto/main.go
 
-# mac:
-# 	@go build -o ./mac/manifesto ../cmd/manifesto/main.go
+# mac-arm:
+# 	@GOOS=darwin GOARCH=arm64 go build -o ./mac-arm/manifesto ../cmd/manifesto/main.go
+
+# mac-intel:
+# 	@GOOS=darwin GOARCH=amd64 go build -o ./mac-intel/manifesto ../cmd/manifesto/main.go
 
