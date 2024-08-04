@@ -96,4 +96,4 @@ You can also try using the go install mechanism:
 go install github.com/bit101/manifesto/cmd/manifesto@latest
 ```
 
-This will still require CairoGraphics and a supported C compiler, but will not require explicitly checking out the repo and other dependencies.
+This will still require CairoGraphics and a supported C compiler (and go, of course), but will not require explicitly checking out the repo and other dependencies.
