@@ -87,3 +87,13 @@ If you want a build on something else, these steps should work:
 3. Install the [cairographics](https://cairographics.org) library for your platform and system.
 4. You will also need a supported C compiler such as `gcc`. This probably means installing `mingw` on Windows.
 5. The `build/Makefile` script has targets for each platform that should get you started.
+
+## Go Install
+
+You can also try using the go install mechanism:
+
+```
+go install github.com/bit101/manifesto/cmd/manifesto@latest
+```
+
+This will still require CairoGraphics and a supported C compiler, but will not require explicitly checking out the repo and other dependencies.
