@@ -76,17 +76,20 @@ Binaries are included for the following in the [releases](https://github.com/bit
 - Linux amd64
 - MacOS arm64 (Silicon/M-series) 
 
-Building cross platform with external platform-specific C libraries is complicated, so I'm mainly just going to build natively on the machines I have. I'll try to get a Windows build going soon.
+Building cross platform with external platform-specific C libraries is complicated, so I'm mainly just going to build Linux and MacOS arm versions on the native hardware I have.
+
+Building a CairoGraphics application on Windows, even natively, is way too complex and is not worth my time. I suggest running [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) if you're on Windows, and running the Linux version from there.
 
 ## Building
 
-If you want a build on something else, these steps should work:
+If you want a build on something other than Linux or Mac, these are the general steps:
 
 1. Check out the repo.
 2. Run `go mod tidy` which should install the go dependencies.
 3. Install the [cairographics](https://cairographics.org) library for your platform and system.
-4. You will also need a supported C compiler such as `gcc`. This probably means installing `mingw` on Windows.
-5. The `build/Makefile` script has targets for each platform that should get you started.
+4. For Windows you'll need to do all of this: https://www.gtk.org/docs/installations/windows/
+5. You will also need a supported C compiler such as `gcc`.
+6. The `build/Makefile` script has targets for each platform that should get you started.
 
 ## Go Install
 
