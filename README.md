@@ -71,12 +71,14 @@ By default, a file called `manifesto.png` is created as the output, but the file
 
 ## Releases
 
-A Linux binary is included in the release. Building on MacOS and Windows should be possible and I may provide those later. But due to platform specific dependencies, cross compiling for different systems is more complex. I'll more likely just build the binary for each platform natively on that machine.
+Binaries for Linux and MacOS arm64 (Silicon/M-series) are included in the release. Building cross platform with external platform-specific dependencies is hard, so I'm mainly just going to build natively on the machines I have. I'll try to get a Windows build going soon.
 
 ## Building
+
+If you want a build on something else, these steps should work:
 
 1. Check out the repo.
 2. Run `go mod tidy` which should install the go dependencies.
 3. Install the [cairographics](https://cairographics.org) library for your platform and system.
 4. You will also need a supported C compiler such as `gcc`. This probably means installing `mingw` on Windows.
-5. The `build/Makefile` script has scripts for each platform that should work.
+5. The `build/Makefile` script has scripts for each platform that should get you started.
